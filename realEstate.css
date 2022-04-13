@@ -9,12 +9,22 @@ a {
 .basic{
   background-image: url('dtown2.jpg');
   background-size: cover;
-  height: 666px;
-}
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
+}
+h1,p{
+  text-align: center;
+}
 .house_image{
-  width: 600px;
+  width: 480px;
+  height: 350px;
   display: block;
+}
+form{
+  display: inline-block;
 }
 
 /**** LAYOUT ****/
@@ -24,11 +34,26 @@ a {
 .container-pad {
     padding: 30px 15px;
 }
-
-
+.carousel-item{
+  text-align: center;
+  object-fit: cover;
+}
+@media (min-width: 1068px) {
+.carousel .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+}
+#search{
+  display: block;
+  text-align: center;
+}
+input{
+  display: inline;
+}
 /**** MODULE ****/
 .bgc-fff {
-    background-color: #fff!important;
+    background-color: #325E64!important;
 }
 .box-shad {
     -webkit-box-shadow: 1px 1px 0 rgba(0,0,0,.2);
@@ -84,5 +109,6 @@ a {
 @media only screen and (min-width: 992px) {
     #property-listings .property-listing img {
         max-width: 600px;
+        min-width: 550px;
     }
 }
