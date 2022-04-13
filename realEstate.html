@@ -12,16 +12,58 @@
       <link rel="stylesheet" href="realEstate.css">
   </head>
 
-<!------ Include the above in your HEAD tag ---------->
 <body>
-
   <div class="basic">
-          <h1>Million Dollar Home Listings</h1>
-          <p>A snippet I recently used to display homes for a local brokerage.  Focused more on images when accessed through mobile</p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form style="margin-left:200px;" class="form-inline">
+      <input class="form-control mr-sm-2" style="padding-left:200px;" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <button style="margin-right:400px;" class="btn btn-outline-info nav-item navbar-button" type="submit">Search</button>
+  </div>
+</nav>
       </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="house3.jpg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="house4.jpg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="house5.jpg" alt="...">
+    </div>
+  </div>
+</div>
     <div class="container-fluid">
-
-
             <div class="row">
                 <div class="col-sm-6">
 
@@ -65,7 +107,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="house2.webp"></a>
+                            <img class='house_image' alt="image" class="img-responsive" src="house2.webp"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -100,7 +142,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/iwn7qH9r9OPnqTaTTxxb8PBzQHk2EiHU2PBBntt041AZsVsGY-SeUexTMLgRcYSJukrKOwHaYnTVXAsk6RdSmA.jpg"></a>
+                            <img class='house_image' alt="image" src="house3.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -135,7 +177,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/7IZk2HTN0AcHnIb7VCvisTUc3kTbn0UyHQlVAlwkNLM3_8UNN8pcgy9u6KVNoRGGH_kdUlpYehdbqzctRNUebg.jpg"></a>
+                            <img class='house_image'  alt="image" src="house6.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -177,7 +219,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/vGoNjc2jHGb87GlnnDQlf6LxeOUgIOn0bL6Wvn1nEnig2Ntq6W7xN5cOQBZZeNxl9O42DOkHUw0LNnj1ZB2KHA.jpg"></a>
+                            <img class='house_image' alt="image" src="house4.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -212,7 +254,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/uLp58OH37CTPHxXcgJXYw8zT2u3xg_2XIbFndB6J0WTSAStGBaEV6YsdAseSZTKAdthm0OzG-Ca_EIkoXIEBxw.jpg"></a>
+                            <img class='house_image' alt="image" src="house5.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -247,7 +289,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/K12MLs4i-e2rsQ-rA6DoCwlysXSrEXZyHtCFkrOLsvK1y2mvbUrlmw5pMXX1laXlnY9_0VU82YeS3EucwIchtg.jpg"></a>
+                            <img class='house_image' alt="image" src="house7.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -281,7 +323,7 @@
                 </div><!-- End Col -->
             </div><!-- End row -->
         </div><!-- End container -->
-    </div>
     </body>
 
   </html>
+
