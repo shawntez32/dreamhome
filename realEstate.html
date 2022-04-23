@@ -3,6 +3,16 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link
+         href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+         rel="stylesheet"
+       />
+       <!-- Font Awesome -->
+       <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+       />
+       <link href="https://fonts.googleapis.com/css2?family=Monda:wght@700&family=Neonderthaw&family=Poppins:wght@200;500&family=Prompt:wght@300&family=Source+Sans+Pro:wght@300&family=The+Nautigal&family=Ubuntu&family=Updock&display=swap" rel="stylesheet">
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -14,7 +24,8 @@
 
 <body>
   <div class="basic">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+    <!-- Navbar <section> -->
+  <nav style="padding:10px; background-color:#FF7A00;" class="navbar navbar-expand-lg navbar-light justify-content-between">
   <a class="navbar-brand" href="#">DreamHome</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -30,17 +41,20 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Search Settings
+          Price
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">$125,000</a>
+          <a class="dropdown-item" href="#">$150,000</a>
+          <a class="dropdown-item" href="#">$175,000</a>
+          <a class="dropdown-item" href="#">$200,000</a>
+          <a class="dropdown-item" href="#">$225,000</a>
+          <a class="dropdown-item" href="#">$250,000</a>
+          <a class="dropdown-item" href="#">$275,000</a>
+          <a class="dropdown-item" href="#">$300,000</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Ballin outta control!</a>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
     <form style="margin-left:200px;" class="form-inline">
@@ -50,280 +64,465 @@
   </div>
 </nav>
       </div>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <h1>Featured Homes</h1>
-    <div style="height:315px;" class="carousel-inner">
-    <div class="carousel-item active">
-      <img  src="house3.jpg" alt="house">
-    </div>
-    <div class="carousel-item">
-      <img style='max-height: 100%; width: 100%; object-fit: fill;' src="house4.jpg" alt="real estate">
-    </div>
-    <div class="carousel-item">
-      <img style='max-height: 100%; width: 60%; object-fit: cover;' src="house5.jpg" alt="home">
-    </div>
-  </div>
-</div>
+      <div class="more-homes">
+        <h4 class="more-homes-header">More Homes</h4>
+
+      </div>
+
     <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
 
                     <!-- Begin Listing: 609 W GRAVERS LN-->
-                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                    <section>
+                    <div class="rent-center container">
+                      <div class="box1 col-sm-4">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" src='house.webp' ></a>
-
-                            <div class="clearfix visible-sm"></div>
-
-                            <div class="media-body fnt-smaller">
-                                <a href="#" target="_parent"></a>
-
-                                <h4 class="media-heading">
-                                  <a href="#" target="_parent">$1,975,000 <small class="pull-right">609 W Gravers Ln</small></a></h4>
-
-
-                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                    <li>4,820 SqFt</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>5 Beds</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>5 Baths</li>
-                                </ul>
-
-                                <p class="hidden-xs">Situated between fairmount
-                                park and the prestigious philadelphia cricket
-                                club, this beautiful 2+ acre property is truly
-                                ...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Chestnut Hill
-                                Evergreen</span>
+                            <div class="box">
+                              <div class="top">
+                                <div class="overlay">
+                                  <img class="house_image" alt="image" src='house.webp' >
+                                </div>
+                                <div class="bottom">
+                                  <ul class="list-inline mrg-0 clr-535353">
+                                    <li href="#" target="_parent"><h4>$475,000</h4> </li>
+                                    <li><h4>4,340 SqFt</h4></li>
+                                    <li><h4>5 Beds</h4></li>
+                                    <li><h4>5 Baths</h4></li>
+                                    <li><h4>609 W Gravers Ln</h4></li>
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
+                          </div>
                         </div>
-                    </div><!-- End Listing-->
+
+
+                      <div class="box2 col-sm-4">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <div class="box">
+                              <div class="top">
+                                <div class="overlay">
+                                  <img class="house_image" alt="image" src='house2.webp' >
+                                </div>
+                                <div class="bottom">
+                                  <ul class="list-inline mrg-0 clr-535353">
+                                    <li href="#" target="_parent"><h4>$555,000</h4></li>
+                                    <li><h4>6,825 SqFt</h4></li>
+                                    <li><h4>6 Beds</h4></li>
+                                    <li><h4>4 Baths</h4></li>
+                                    <li><h4>218 Lynnebrook Ln</h4></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                            <div class="box3 col-sm-4">
+                              <div class="media">
+                                  <a class="pull-left" href="#" target="_parent">
+                                  <div class="box">
+                                    <div class="top">
+                                      <div class="overlay">
+                                        <img class="house_image" alt="image" src='house3.jpg' >
+                                      </div>
+                                      <div class="bottom">
+                                        <ul class="list-inline mrg-0 clr-535353">
+                                          <li href="#" target="_parent"><h4>$1,599,999</h4> </li>
+                                          <li><h4>13,500 SqFt</h4></li>
+                                          <li><h4>8 Beds</h4></li>
+                                          <li><h4>6 Baths</h4></li>
+                                          <li><h4>209 Chestnut Hill ve</h4></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
                     <!-- Begin Listing: 218 LYNNEBROOK LN-->
-                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                        <div class="media">
-                            <a class="pull-left" href="#" target="_parent">
-                            <img class='house_image' alt="image" class="img-responsive" src="house2.webp"></a>
 
-                            <div class="clearfix visible-sm"></div>
-
-                            <div class="media-body fnt-smaller">
-                                <a href="#" target="_parent"></a>
-
-                                <h4 class="media-heading">
-                                  <a href="#" target="_parent">$1,975,000 <small class="pull-right">218 Lynnebrook Ln</small></a></h4>
-
-
-                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                    <li>6,959 SqFt</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>6 Beds</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>5 Baths</li>
-                                </ul>
-
-                                <p class="hidden-xs">Impressively positioned
-                                overlooking 3.5 captivating acres, designated
-                                as "significant" by the chestnut hill
-                                historical s...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Blue Bell</span>
-                            </div>
-                        </div>
-                    </div><!-- End Listing-->
 
                     <!-- Begin Listing: 209 CHESTNUT HILL AVE-->
-                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                        <div class="media">
-                            <a class="pull-left" href="#" target="_parent">
-                            <img class='house_image' alt="image" src="house3.jpg"></a>
-
-                            <div class="clearfix visible-sm"></div>
-
-                            <div class="media-body fnt-smaller">
-                                <a href="#" target="_parent"></a>
-
-                                <h4 class="media-heading">
-                                  <a href="#" target="_parent">$1,599,999 <small class="pull-right">209 Chestnut Hill ve</small></a></h4>
-
-
-                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                    <li>16,581 SqFt</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>8 Beds</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>4 Baths</li>
-                                </ul>
-
-                                <p class="hidden-xs">Built in 1909 by
-                                pittsburgh steel magnate henry a. laughlin,
-                                greylock is a classic chestnut hill stone
-                                mansion once cons...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of ng and Foster-Devon</span>
-                            </div>
-                        </div>
-                    </div><!-- End Listing-->
 
                     <!-- Begin Listing: 704 SAINT GEORGES ST-->
-                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                        <div class="media">
-                            <a class="pull-left" href="#" target="_parent">
-                            <img class='house_image'  alt="image" src="house6.jpg"></a>
 
-                            <div class="clearfix visible-sm"></div>
-
-                            <div class="media-body fnt-smaller">
-                                <a href="#" target="_parent"></a>
-
-                                <h4 class="media-heading">
-                                  <a href="#" target="_parent">$1,595,000 <small class="pull-right">704 Saint Georges St</small></a></h4>
-
-
-                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                    <li>0 SqFt</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>4 Beds</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>5 Baths</li>
-                                </ul>
-
-                                <p class="hidden-xs">Blake development is proud
-                                to offer the second of two distinctly unique
-                                homes located on one of the most desirable
-                                stree...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Chestnut Hill
-                                Evergreen</span>
-                            </div>
                         </div>
                     </div><!-- End Listing-->
 
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <!-- Begin Listing: 609 W GRAVERS LN-->
+                            <div class="rent-center container">
+                              <div class="box1 col-sm-4">
+                                <div class="media">
+                                    <a class="pull-left" href="#" target="_parent">
+                                    <div class="box">
+                                      <div class="top">
+                                        <div class="overlay">
+                                          <img class="house_image" alt="image" src='house4.jpg' >
+                                        </div>
+                                        <div class="bottom">
+                                          <ul class="list-inline mrg-0 clr-535353">
+                                            <li href="#" target="_parent"><h4>$475,000</h4> </li>
+                                            <li><h4>4,340 SqFt</h4></li>
+                                            <li><h4>5 Beds</h4></li>
+                                            <li><h4>5 Baths</h4></li>
+                                            <li><h4>609 W Gravers Ln</h4></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
 
 
-                </div>
+                              <div class="box2 col-sm-4">
+                                <div class="media">
+                                    <a class="pull-left" href="#" target="_parent">
+                                    <div class="box">
+                                      <div class="top">
+                                        <div class="overlay">
+                                          <img class="house_image" alt="image" src='house5.jpg' >
+                                        </div>
+                                        <div class="bottom">
+                                          <ul class="list-inline mrg-0 clr-535353">
+                                            <li href="#" target="_parent"><h4>$555,000</h4></li>
+                                            <li><h4>6,825 SqFt</h4></li>
+                                            <li><h4>6 Beds</h4></li>
+                                            <li><h4>4 Baths</h4></li>
+                                            <li><h4>218 Lynnebrook Ln</h4></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
 
-                <div class="col-sm-6">
+                                    <div class="box3 col-sm-4">
+                                      <div class="media">
+                                          <a class="pull-left" href="#" target="_parent">
+                                          <div class="box">
+                                            <div class="top">
+                                              <div class="overlay">
+                                                <img class="house_image" alt="image" src='house6.jpg' >
+                                              </div>
+                                              <div class="bottom">
+                                                <ul class="list-inline mrg-0 clr-535353">
+                                                  <li href="#" target="_parent"><h4>$1,599,999</h4> </li>
+                                                  <li><h4>13,500 SqFt</h4></li>
+                                                  <li><h4>8 Beds</h4></li>
+                                                  <li><h4>6 Baths</h4></li>
+                                                  <li><h4>209 Chestnut Hill ve</h4></li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
 
-                    <!-- Begin Listing: 1220-32 N HOWARD ST-->
-                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                        <div class="media">
-                            <a class="pull-left" href="#" target="_parent">
-                            <img class='house_image' alt="image" src="house4.jpg"></a>
-
-                            <div class="clearfix visible-sm"></div>
-
-                            <div class="media-body fnt-smaller">
-                                <a href="#" target="_parent"></a>
-
-                                <h4 class="media-heading">
-                                  <a href="#" target="_parent">$1,500,000 <small class="pull-right">1220-32 N Howard St</small></a></h4>
+                            <!-- Begin Listing: 218 LYNNEBROOK LN-->
 
 
-                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                    <li>4,900 SqFt</li>
+                            <!-- Begin Listing: 209 CHESTNUT HILL AVE-->
 
-                                    <li style="list-style: none">|</li>
+                            <!-- Begin Listing: 704 SAINT GEORGES ST-->
 
-                                    <li>1 Beds</li>
+                                </div>
+                            </div><!-- End Listing-->
+                <div class="row">
+                    <div class="col-sm-12">
 
-                                    <li style="list-style: none">|</li>
-
-                                    <li>1 Baths</li>
-                                </ul>
-
-                                <p class="hidden-xs">A once in a lifetime
-                                opportunity to own a unique live / work space
-                                in one of philadelphia's most popular
-                                neighborhoods. ...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of ll Banker Preferred-Philadelphia</span>
+                        <!-- Begin Listing: 609 W GRAVERS LN-->
+                        <div class="rent-center container">
+                          <div class="box1 col-sm-4">
+                            <div class="media">
+                                <a class="pull-left" href="#" target="_parent">
+                                <div class="box">
+                                  <div class="top">
+                                    <div class="overlay">
+                                      <img class="house_image" alt="image" src='house7.jpg' >
+                                    </div>
+                                    <div class="bottom">
+                                      <ul class="list-inline mrg-0 clr-535353">
+                                        <li href="#" target="_parent"><h4>$475,000</h4> </li>
+                                        <li><h4>4,340 SqFt</h4></li>
+                                        <li><h4>5 Beds</h4></li>
+                                        <li><h4>5 Baths</h4></li>
+                                        <li><h4>609 W Gravers Ln</h4></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                    </div><!-- End Listing-->
-
-                    <!-- Begin Listing: 9006 CREFELD ST-->
-                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                        <div class="media">
-                            <a class="pull-left" href="#" target="_parent">
-                            <img class='house_image' alt="image" src="house5.jpg"></a>
-
-                            <div class="clearfix visible-sm"></div>
-
-                            <div class="media-body fnt-smaller">
-                                <a href="#" target="_parent"></a>
-
-                                <h4 class="media-heading">
-                                  <a href="#" target="_parent">$1,295,000 <small class="pull-right">9006 Crefeld St</small></a></h4>
 
 
-                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                    <li>7,672 SqFt</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>7 Beds</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>5 Baths</li>
-                                </ul>
-
-                                <p class="hidden-xs">Located in chestnut hill,
-                                recently named by the american planning
-                                association as one of america's top 10 great
-                                neighborh...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of RE/MAX Services</span>
+                          <div class="box2 col-sm-4">
+                            <div class="media">
+                                <a class="pull-left" href="#" target="_parent">
+                                <div class="box">
+                                  <div class="top">
+                                    <div class="overlay">
+                                      <img class="house_image" alt="image" src='house8.jpg' >
+                                    </div>
+                                    <div class="bottom">
+                                      <ul class="list-inline mrg-0 clr-535353">
+                                        <li href="#" target="_parent"><h4>$555,000</h4></li>
+                                        <li><h4>6,825 SqFt</h4></li>
+                                        <li><h4>6 Beds</h4></li>
+                                        <li><h4>4 Baths</h4></li>
+                                        <li><h4>218 Lynnebrook Ln</h4></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                    </div><!-- End Listing-->
 
-                    <!-- Begin Listing: 701 W ALLENS LN-->
-                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
-                        <div class="media">
-                            <a class="pull-left" href="#" target="_parent">
-                            <img class='house_image' alt="image" src="house7.jpg"></a>
+                                <div class="box3 col-sm-4">
+                                  <div class="media">
+                                      <a class="pull-left" href="#" target="_parent">
+                                      <div class="box">
+                                        <div class="top">
+                                          <div class="overlay">
+                                            <img class="house_image" alt="image" src='house9.jpg' >
+                                          </div>
+                                          <div class="bottom">
+                                            <ul class="list-inline mrg-0 clr-535353">
+                                              <li href="#" target="_parent"><h4>$1,599,999</h4> </li>
+                                              <li><h4>13,500 SqFt</h4></li>
+                                              <li><h4>8 Beds</h4></li>
+                                              <li><h4>6 Baths</h4></li>
+                                              <li><h4>209 Chestnut Hill ve</h4></li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                            <div class="clearfix visible-sm"></div>
-
-                            <div class="media-body fnt-smaller">
-                                <a href="#" target="_parent"></a>
-
-                                <h4 class="media-heading">
-                                  <a href="#" target="_parent">$1,175,000 <small class="pull-right">701 W Allens Ln</small></a></h4>
+                        <!-- Begin Listing: 218 LYNNEBROOK LN-->
 
 
-                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
-                                    <li>9,824 SqFt</li>
+                        <!-- Begin Listing: 209 CHESTNUT HILL AVE-->
 
-                                    <li style="list-style: none">|</li>
+                        <!-- Begin Listing: 704 SAINT GEORGES ST-->
 
-                                    <li>8 Beds</li>
-
-                                    <li style="list-style: none">|</li>
-
-                                    <li>5 Baths</li>
-                                </ul>
-
-                                <p class="hidden-xs">A once in a lifetime
-                                opportunity! live in this grand home with its
-                                stunning entry and staircase, bedroom suites,
-                                firepla...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Chestnut Hill
-                                Evergreen</span>
                             </div>
+                        </div><!-- End Listing-->
+                        </section>
+
+                        <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
+                          <h1 id="featured_homes">Featured Homes</h1>
+                      <div style="height:333px;" class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img  src="sliderhouse-fit4.jpg" alt="house">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="sliderhouse-fit2.jpg" alt="real estate">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="sliderhouse-fit3.jpg" alt="home">
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <!-- Begin Listing: 609 W GRAVERS LN-->
+                            <section class="section grid-layout">
+                            <div class="rent-center container">
+                              <div class="box1 col-sm-4">
+                                <div class="media">
+                                    <a class="pull-left" href="#" target="_parent">
+                                    <div class="box">
+                                      <div class="top">
+                                        <div class="overlay">
+                                          <img class="house_image" alt="image" src='house.webp' >
+                                        </div>
+                                        <div class="bottom">
+                                          <ul class="list-inline mrg-0 clr-535353">
+                                            <li href="#" target="_parent"><h4>$475,000</h4> </li>
+                                            <li><h4>4,340 SqFt</h4></li>
+                                            <li><h4>5 Beds</h4></li>
+                                            <li><h4>5 Baths</h4></li>
+                                            <li><h4>609 W Gravers Ln</h4></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                              <div class="box2 col-sm-4">
+                                <div class="media">
+                                    <a class="pull-left" href="#" target="_parent">
+                                    <div class="box">
+                                      <div class="top">
+                                        <div class="overlay">
+                                          <img class="house_image" alt="image" src='house2.webp' >
+                                        </div>
+                                        <div class="bottom">
+                                          <ul class="list-inline mrg-0 clr-535353">
+                                            <li href="#" target="_parent"><h4>$555,000</h4></li>
+                                            <li><h4>6,825 SqFt</h4></li>
+                                            <li><h4>6 Beds</h4></li>
+                                            <li><h4>4 Baths</h4></li>
+                                            <li><h4>218 Lynnebrook Ln</h4></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                    <div class="box3 col-sm-4">
+                                      <div class="media">
+                                          <a class="pull-left" href="#" target="_parent">
+                                          <div class="box">
+                                            <div class="top">
+                                              <div class="overlay">
+                                                <img class="house_image" alt="image" src='house3.jpg' >
+                                              </div>
+                                              <div class="bottom">
+                                                <ul class="list-inline mrg-0 clr-535353">
+                                                  <li href="#" target="_parent"><h4>$1,599,999</h4> </li>
+                                                  <li><h4>13,500 SqFt</h4></li>
+                                                  <li><h4>8 Beds</h4></li>
+                                                  <li><h4>6 Baths</h4></li>
+                                                  <li><h4>209 Chestnut Hill ve</h4></li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                            <!-- Begin Listing: 218 LYNNEBROOK LN-->
+
+
+                                            <!-- Begin Listing: 209 CHESTNUT HILL AVE-->
+
+                                            <!-- Begin Listing: 704 SAINT GEORGES ST-->
+
+                                                </div>
+                                            </div><!-- End Listing-->
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- Begin Listing: 609 W GRAVERS LN-->
+                <div class="rent-center container">
+                  <div class="box1 col-sm-4">
+                    <div class="media">
+                        <a class="pull-left" href="#" target="_parent">
+                        <div class="box">
+                          <div class="top">
+                            <div class="overlay">
+                              <img class="house_image" alt="image" src='house.webp' >
+                            </div>
+                            <div class="bottom">
+                              <ul class="list-inline mrg-0 clr-535353">
+                                <li href="#" target="_parent"><h4>$475,000</h4> </li>
+                                <li><h4>4,340 SqFt</h4></li>
+                                <li><h4>5 Beds</h4></li>
+                                <li><h4>5 Baths</h4></li>
+                                <li><h4>609 W Gravers Ln</h4></li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                    </div><!-- End Listing-->
+                      </div>
+                    </div>
+
+
+                  <div class="box2 col-sm-4">
+                    <div class="media">
+                        <a class="pull-left" href="#" target="_parent">
+                        <div class="box">
+                          <div class="top">
+                            <div class="overlay">
+                              <img class="house_image" alt="image" src='house2.webp' >
+                            </div>
+                            <div class="bottom">
+                              <ul class="list-inline mrg-0 clr-535353">
+                                <li href="#" target="_parent"><h4>$555,000</h4></li>
+                                <li><h4>6,825 SqFt</h4></li>
+                                <li><h4>6 Beds</h4></li>
+                                <li><h4>4 Baths</h4></li>
+                                <li><h4>218 Lynnebrook Ln</h4></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                        <div class="box3 col-sm-4">
+                          <div class="media">
+                              <a class="pull-left" href="#" target="_parent">
+                              <div class="box">
+                                <div class="top">
+                                  <div class="overlay">
+                                    <img class="house_image" alt="image" src='house3.jpg' >
+                                  </div>
+                                  <div class="bottom">
+                                    <ul class="list-inline mrg-0 clr-535353">
+                                      <li href="#" target="_parent"><h4>$1,599,999</h4> </li>
+                                      <li><h4>13,500 SqFt</h4></li>
+                                      <li><h4>8 Beds</h4></li>
+                                      <li><h4>6 Baths</h4></li>
+                                      <li><h4>209 Chestnut Hill ve</h4></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                            </div>
+                          </div><!-- End Listing-->
                 </div><!-- End Col -->
+
             </div><!-- End row -->
-        </div><!-- End container -->
+            </section>
+            <div class="footer-div">
+            <footer class="footer">
+              <div class="row">
+                <div class="col d-flex information">
+                  <h4>INFORMATION</h4>
+                  <a href="">About us</a>
+                  <a href="">Contact Us</a>
+                  <a href="">Term & Conditions</a>
+                  <a href="">Shipping Guide</a>
+                </div>
+                <div class="col d-flex useful-links">
+                  <h4>USEFUL LINK</h4>
+                  <a href="">Online Store</a>
+                  <a href="">Customer Services</a>
+                  <a href="">Promotion</a>
+                  <a href="">Top Brands</a>
+                </div>
+                <div class="col d-flex iconz">
+                  <span><a><i class="bx bxl-facebook-square"></i></a></span>
+                  <span><a><i class="bx bxl-instagram-alt"></i></a></span>
+                  <span><a><i class="bx bxl-github"></i><</a></span>
+                  <span><i class="bx bxl-twitter"></i></span>
+                  <span><i class="bx bxl-pinterest"></i></span>
+                </div>
+                </div>
+            </footer>
+            </div>
+
+
     </body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
 
   </html>
