@@ -6,6 +6,15 @@ a {
     color: #03a1d1;
     text-decoration: none!important;
 }
+background-image{
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+#matchList{
+  position: relative;
+  top: 40px;
+  right: 240px;
+}
 .rent .box .top img {
   height: 100%;
   object-fit: cover;
@@ -42,7 +51,6 @@ a {
 .rent .box .pos {
   position: absolute;
   top: 2rem;
-  left: 2rem;
 }
 
 .rent .box .pos span {
@@ -114,9 +122,29 @@ a {
 #house_section{
   text-align: center;
 }
+.about-dreamhome{
+  background-image: url('Images/lease4.jpg');
+  padding: 40px;
+  height: 495px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about-dreamhome>h3{
+  font-family: 'Ubuntu':sans-serif;
+  text-align: center;
+}
+img{
+  object-fit: cover;
+}
+.about-dreamhome>p{
+  font-family: 'Ubuntu':sans-serif;
+  text-align: center;
+}
 #featured_homes{
   color: #000;
-  font-size: 18px;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-family: 'Ubuntu':sans-serif;
 }
 .box1,.box2,.box3{
   display:inline-block;
@@ -129,25 +157,27 @@ a {
   padding-top: 40px;
   padding-right: 55px;
   margin-top: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 75px;
 }
 .overlay>img{
   padding-top: 35px;
 }
 .bottom{
   background-color: #F6D860;
-  padding-top: 35px;
+  padding-top: 15px;
   width:324px;
 }
+.sep{
+  background-color: #fff;
+}
 .bottom>.list-inline{
-  font-family: 'Updock', cursive;
+  font-family: 'Public Sans', sans-serif;
   font-size: 40px;
 }
 .list-inline>li {
     padding: 0 10px 0 0;
     color: #000;
     text-align: center;
-
 }
 .box-image{
   height: 150px;
@@ -160,7 +190,7 @@ a {
   border-color: #0D6EFD;
 }
 .basic{
-  background-image: url('dtown-fit4.jpg');
+  background-image: url('Images/dtown-fit4.jpg');
   background-size: cover;
   height: 100vh;
   background-size: cover;
@@ -225,7 +255,7 @@ img {
 }
 @media (min-width: 1068px) {
 .carousel .carousel-item img {
-    height: 350px;
+    height: 100vh;
     object-fit: cover;
 }
 }
@@ -271,6 +301,7 @@ input{
   color: #A72E01;
   text-align: center;
   font-style: italic;
+  margin-top: 15px;
 }
 
 /* Color  */
@@ -302,7 +333,7 @@ input{
   position: relative;
   left: 800px;
   bottom: 250px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .information{
   position: relative;
@@ -346,6 +377,146 @@ footer .row {
 
 .footer .col h4 {
   margin-bottom: 1rem;
+}
+
+/*Heroes*/
+.hero,
+.heroslider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next {
+  right: -50px;
+}
+
+.swiper-button-prev {
+  left: -50px;
+}
+
+.header:hover .swiper-button-next {
+  right: 40px;
+}
+.header:hover .swiper-button-prev {
+  left: 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  padding: 0.5rem 2.3rem;
+  transition: all 500ms ease-in-out;
+}
+
+.swiper-icon {
+  font-size: 5rem;
+  color: white;
+}
+
+.header .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 1;
+  text-align: center;
+}
+
+.header .content h1 {
+  font-size: 7rem;
+  color: #ffffff;
+  margin-bottom: 4rem;
+}
+
+.header .search {
+  width: 70rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .search input {
+  width: 100%;
+  padding: 1.5rem 0;
+  text-indent: 1rem;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  outline: none;
+  border: none;
+}
+
+.header .search a {
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  background-color: var(--green);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 996px) {
+  .header .content h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .header .search {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .header .content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .header .search {
+    width: 100%;
+  }
+
+  .header .search input {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+  }
+
+  .header .search a {
+    padding: 1rem;
+  }
+
+  .header:hover .swiper-button-next {
+    right: 5px;
+  }
+  .header:hover .swiper-button-prev {
+    left: 5px;
+  }
+
+  .swiper-icon {
+    font-size: 3rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 0.2rem 2.3rem;
+  }
 }
 
 /**** MEDIA QUERIES ****/
