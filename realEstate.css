@@ -1,10 +1,11 @@
 /**** BASE ****/
 html, body {
-    background-color:#ACBD86;
+    background-color:#E4FBFF;
     overflow-x: hidden;
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 a {
     color: #03a1d1;
@@ -57,7 +58,7 @@ background-image{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #FFD6A0;
+  background-color: #F9F8EB;
   border-radius: 15px;
   padding: 15px;
   margin-left: 8px;
@@ -72,7 +73,7 @@ background-image{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: #FFD6A0;
+  background-color: #F9F8EB;
   border-radius: 15px;
   padding: 15px;
   justify-items: center;
@@ -120,8 +121,8 @@ background-image{
 .caption{
    font-size: 25px;
    font-weight: bolder;
-   font-family: 'Ubuntu', 'Archiva', sans-serif;
-   color: #F6D860;
+   font-family: 'Roboto', sans-serif;
+   color: #CCD1E4;
    text-shadow: -2px 1px black;
 }
 .BL {
@@ -142,23 +143,24 @@ background-image{
   color: #000;
   font-size: 32px;
   margin-bottom: 40px;
-  font-family: 'Ubuntu':sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .overlay>img{
   padding-top: 35px;
 }
 .bottom{
-  background-color: #F6D860;
+  background-color: #EAE7E7;
   padding-top: 15px;
 }
 .sep{
   background-color: #fff;
 }
 .bottom>.list-inline{
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 40px;
 }
-.list-inline>li {
+.list-inline>
+{
     padding: 0 10px 0 0;
     color: #000;
     text-align: center;
@@ -192,7 +194,10 @@ background-image{
 .secondNav h2{
   text-align: center;
   padding-right: 50px;
-  color: #F6D860;
+  color: #CCD1E4;
+}
+.secondNav button{
+  color: #CCD1E4;
 }
 .mapdiv{
   padding-top: 20px;
@@ -318,7 +323,7 @@ input{
 }
 .footer-div {
   padding: 4rem 0.6rem;
-  background-color: #28544B;
+  background-color: #EDEEF7;
   background-size: cover;
   background-position: center;
   margin-top: 60px;
@@ -353,10 +358,10 @@ input{
 }
 #information{
   grid-column: 2;
-  color: #FFD6A0;
+  color: #F9F8EB;
 }
 .information a{
-  color: #FFD6A0;
+  color: #F9F8EB;
 }
 #useful-links{
   grid-column: 3;
@@ -388,21 +393,21 @@ body > footer{
   margin: 0 auto;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #FFD6A0;
+    color: #CCD1E4;
 }
 .navbar-light .navbar-brand {
-  color: #FFD6A0;
+  color: #CCD1E4;
 }
 
 .footer .col a {
-  color: #FFD6A0;
+  color: #CCD1E4;
   font-size: 18px;
   padding: 0.5rem;
   font-weight: 300;
   transition: all 500ms ease-in-out;
 }
 .footer .col i {
-  color: #FFD6A0;
+  color: #CCD1E4;
   font-size: 24px;
   padding: 0.5rem;
   font-weight: 600;
@@ -410,7 +415,7 @@ body > footer{
   align-items: flex-start;
 }
 .footer .col h4{
-  color: #FFD6A0;
+  color: #CCD1E4;
   font-size: 28px;
   font-weight: 400;
   padding: 0.5rem;
@@ -589,7 +594,7 @@ body > footer{
     }
     .footer-div {
     padding: 4rem 0.6rem;
-    background-color: #28544B;
+    background-color: #EDEEF7;
     background-size: cover;
     background-position: center;
     margin-top: 60px;
