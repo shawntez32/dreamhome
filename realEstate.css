@@ -563,7 +563,7 @@ body > footer{
 }
 
 /**** MEDIA QUERIES ****/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 991px) {
     #property-listings .property-listing {
         padding: 5px!important;
     }
@@ -579,6 +579,35 @@ body > footer{
       margin: 0;
       justify-items: center;
     }
+    #footer{
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr 1fr 1fr;
+    }
+    #useful-links, #information, #iZ{
+      grid-column: auto;
+      justify-items: center;
+    }
+    .footer-div {
+    padding: 4rem 0.6rem;
+    background-color: #28544B;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 163px;
+    padding-top: 21px;
+    overflow-y: hidden;
+    height: 750px;
+    width: 100%;
+    position: absolute;
+    right: 1px;
+  }
+  #billboard{
+    display: none;
+  }
+  #carouselExampleSlidesOnly{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {
