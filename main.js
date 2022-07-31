@@ -21,6 +21,7 @@ const searchContent = async searchText => {
 
     function myFunction(value) {
       txt += "<h4><a href=>" + value.name + "<span> " + value.abbr + "</span></a></h4><br>";
+      txt.style.backgroundColor = '#FFC107';
 }};
 
 search.addEventListener('input', () => searchContent(search.value));
