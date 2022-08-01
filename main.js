@@ -18,6 +18,7 @@ const searchContent = async searchText => {
     matches.forEach(myFunction);
     console.log(matches.length);
     document.getElementById("matchList").innerHTML = txt;
+    document.getElementById("matchList").style = 'background-color:grey';
 
     function myFunction(value) {
       txt += `<h4><a href=>${value.name},<span> ${value.abbr}</span></a></h4><br>`;
