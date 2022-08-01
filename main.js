@@ -15,7 +15,6 @@ const searchContent = async searchText => {
     };
 
     let txt = "";
-    matchList.style.backgroundColor = '#FFC107';
     matches.forEach(myFunction);
     console.log(matches.length);
     document.getElementById("matchList").innerHTML = txt;
