@@ -15,13 +15,13 @@ const searchContent = async searchText => {
     };
 
     let txt = "";
+    matchList.style.backgroundColor = '#FFC107';
     matches.forEach(myFunction);
     console.log(matches.length);
     document.getElementById("matchList").innerHTML = txt;
 
     function myFunction(value) {
       txt += `<h4 style='background-color:'FFC107''><a href=>${value.name},<span> ${value.abbr}</span></a></h4><br>`;
-      matchList.style.backgroundColor = '#FFC107';
 }};
 
 search.addEventListener('input', () => searchContent(search.value));
