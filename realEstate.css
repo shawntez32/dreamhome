@@ -20,9 +20,7 @@ background-image{
   width: 320px;
   text-align: center;
   margin-left: 300px;
-}
-#matchList h4{
-    background-color: #FFD6A0;
+  background-color: aliceblue;
 }
 #billboard{
   display: grid;
