@@ -20,7 +20,7 @@ const searchContent = async searchText => {
     document.getElementById("matchList").innerHTML = txt;
 
     function myFunction(value) {
-      txt += `<h4 style='background-color:'FFC107''><a href=>${value.name},<span> ${value.abbr}</span></a></h4><br>`;
+      txt += `<h4><a href=>${value.name},<span> ${value.abbr}</span></a></h4><br>`;
 }};
 
 search.addEventListener('input', () => searchContent(search.value));
