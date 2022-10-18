@@ -103,7 +103,7 @@ background-image{
 }
 #featured_homes{
   color: #fff;
-  font-size: 32px;
+  font-size: 38px;
   margin-bottom: 40px;
   font-family: 'Roboto', sans-serif;
 }
@@ -233,7 +233,7 @@ img {
 input{
   display: inline;
 }
-#nav-item{
+#nav-link{
  color: #000000;
 }
 /**** MODULE ****/
