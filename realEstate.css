@@ -23,12 +23,6 @@ background-image{
   background-color: aliceblue;
 }
 }
-#imageContainer{
-  grid-column: 2;
-}
-#map{
-  grid-column: 4;
-}
 .navbar{
   overflow-y: hidden;
   align-items: flex-start;
@@ -107,27 +101,8 @@ background-image{
 .map-box{
   margin-right: 205px;
 }
-.imageContainer {
-   margin-left: 13%;
-   display: inline-block;
-   position: relative;
-   text-align: center;
-   height: 325px;
-   width:90%;
-}
-.caption{
-   font-size: 25px;
-   font-weight: bolder;
-   font-family: 'Roboto', sans-serif;
-   color: #CCD1E4;
-   text-shadow: -2px 1px black;
-}
-.icImage{
-  height: 100%;
-  width: 100%;
-}
 #featured_homes{
-  color: #000;
+  color: #fff;
   font-size: 32px;
   margin-bottom: 40px;
   font-family: 'Roboto', sans-serif;
@@ -257,6 +232,9 @@ img {
 }
 input{
   display: inline;
+}
+#nav-item{
+ color: #000000;
 }
 /**** MODULE ****/
 .box-shad {
