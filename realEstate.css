@@ -358,10 +358,10 @@ body > footer{
   margin: 0 auto;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #CCD1E4;
+    color: #fff;
 }
 .navbar-light .navbar-brand {
-  color: #CCD1E4;
+  color: #fff;
 }
 
 .footer .col a {
