@@ -233,8 +233,8 @@ img {
 input{
   display: inline;
 }
-#nav-link{
- color: #000000;
+#nav-item #nav-link{
+ color: #fff;
 }
 /**** MODULE ****/
 .box-shad {
