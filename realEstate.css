@@ -101,8 +101,9 @@ background-image{
 #featured_homes{
   color: #fff;
   font-size: 38px;
+  font-style: italic;
   margin-bottom: 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .overlay>img{
   padding-top: 35px;
@@ -250,6 +251,7 @@ input{
   text-align: center;
   font-style: italic;
   margin-top: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 /* Color  */
