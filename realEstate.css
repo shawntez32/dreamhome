@@ -63,8 +63,6 @@ background-image{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: #F9F8EB;
-  border-radius: 15px;
   padding: 15px;
   justify-items: center;
 }
@@ -108,8 +106,10 @@ background-image{
   padding-top: 35px;
 }
 .bottom{
-  background-color: #EAE7E7;
+  background-color: #fff;
   padding-top: 15px;
+  border-radius: 15px;
+  border: solid 1px black;
 }
 .sep{
   background-color: #fff;
