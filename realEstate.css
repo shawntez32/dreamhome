@@ -101,6 +101,7 @@ background-image{
   font-style: italic;
   margin-bottom: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px #BFC0C9;
 }
 .overlay>img{
   margin-top: 35px;
@@ -251,7 +252,8 @@ input{
   text-align: center;
   font-style: italic;
   margin-top: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px #BFC0C9;
 }
 
 /* Color  */
